@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->date('birthday');
             $table->float('weight');
-            $table->timestamps();
+
         });
     }
 
