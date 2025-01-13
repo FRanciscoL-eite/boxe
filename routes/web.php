@@ -23,10 +23,10 @@ Route::post('/lutadores/store', function (Request $request) {
     $validated = $request->validate([
         'name' => 'min:3',        
         'birthday' => 'date',        
-        'weight' => 'number'
+        'weight' => 'numeric'
     ]);
 
-    Category::create([
+    Fighter::create([
         'name' => $request->input('name'),
         'birthday' => $request->input('birthday'),
         'weight' => $request->input('weight'),

@@ -7,6 +7,7 @@
                 <div class="bg-gray-400 rounded p-4">
                     <p class="font-bold">{{ $fighter->name }}</p>
                     <p>{{ $fighter->weight }}</p>
+                    <p>{{ $fighter->birthday }}</p>
                 </div>
             @endforeach
         </div>

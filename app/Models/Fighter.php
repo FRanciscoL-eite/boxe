@@ -9,4 +9,7 @@ class Fighter extends Model
 {
     /** @use HasFactory<\Database\Factories\FighterFactory> */
     use HasFactory;
+
+    protected $guarded = [];
+
 }
