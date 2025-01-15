@@ -23,13 +23,17 @@ Route::post('/lutadores/store', function (Request $request) {
     $validated = $request->validate([
         'name' => 'min:3',        
         'birthday' => 'date',        
-        'weight' => 'numeric'
+        'weight' => 'numeric',
+        'statistic' => 'float',        
+        'country' => 'text'
     ]);
 
     Fighter::create([
         'name' => $request->input('name'),
         'birthday' => $request->input('birthday'),
         'weight' => $request->input('weight'),
+        'statistic' => $request->input('statistc'),
+        'country' => $request->input('country'),
     ]);
     
     return redirect()->route('lutadores.create');
