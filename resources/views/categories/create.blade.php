@@ -10,15 +10,6 @@
         @error('slug')
             <div class="text-sm text-red-500">{{ $message }}</div>
         @enderror
-        Image: <input type="file" name="image" value="{{ old('image') }}">
-        @error('image')
-            <div class="text-sm text-red-500">{{ $message }}</div>
-        @enderror
-        <br>
-        Descrição: <textarea name="description">{{ old('description') }}</textarea>
-        @error('description')
-            <div class="text-sm text-red-500">{{ $message }}</div>
-        @enderror
         <x-button>Criar</x-button>
     </form>
 </x-guestLayout>

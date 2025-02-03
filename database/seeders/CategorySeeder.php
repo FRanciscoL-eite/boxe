@@ -14,25 +14,89 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         Category::create([
-            'name' => 'Manuais',
-            'slug' => 'manuais',  
-            'image' => 'manuais.jpg'          
+            'name' => 'Peso Palha',
+            'slug' => '47,6kg',  
         ]);
       
         Category::create([
-            'name' => 'Cidadania e Desenvolvimento',
-            'slug' => 'ced',
-            'description' => 'Nesta categoria poderá encontrar informações sobre os domínios da área curricular de Cidadania e Desenvolvimento'            
+            'name' => 'Peso Mosca-Ligeiro',
+            'slug' => '48,9kg',
         ]);
       
         Category::create([
-            'name' => 'Programação e Sistemas de Informação',
-            'slug' => 'psi',            
+            'name' => 'Peso Mosca',
+            'slug' => '50,8kg',            
         ]);
       
         Category::create([
-            'name' => 'Redes de Comunicação',
-            'slug' => 'rc',            
+            'name' => 'Peso Galo-Ligeiro',
+            'slug' => '52,1kg',            
         ]);
+
+        Category::create([
+            'name' => 'Peso Galo',
+            'slug' => ' 53,5kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Pena-Ligeiro',
+            'slug' => ' 55,3kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Pena',
+            'slug' => ' 57,1kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Leve-Ligeiro',
+            'slug' => ' 58,9kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Leve',
+            'slug' => ' 61,2kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Meio-Médio-Ligeiro',
+            'slug' => ' 63,5kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Meio-Médio',
+            'slug' => ' 66,6kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Médio-Ligeiro',
+            'slug' => ' 69,8kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Médio',
+            'slug' => ' 72,5kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Super-Médio',
+            'slug' => ' 76,2kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Meio-Pesado',
+            'slug' => ' 79,3kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Cruzador',
+            'slug' => ' 90,7kg',            
+        ]);
+
+        Category::create([
+            'name' => 'Peso Pesado',
+            'slug' => ' +91kg',            
+        ]);
+
     }
 }

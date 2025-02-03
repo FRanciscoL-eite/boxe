@@ -22,7 +22,8 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             CategorySeeder::class,
-            FighterSeeder::class
+            FighterSeeder::class,
+            FightSeeder::class            
         ]);
     }
 }

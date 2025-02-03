@@ -11,7 +11,7 @@
                     <td>country</td>
                 </thead>
                 @foreach ($fighters as $fighter)
-                    <tr class="bg-blue-50 rounded p-4">
+                    <tr class="bg-gray-50 rounded p-4">
                         <td >{{ $fighter->name }}</td>
                         <td>{{ $fighter->weight }}</td>
                         <td>{{ $fighter->birthday }}</td>

@@ -2,3 +2,7 @@ git add .
 git commit -m "texto"
 git push
 start npm run dev
+start php artisan migrate:fresh
+start php artisan migrate:fresh --seed
+php artisan db:seed --class=CategorySeeder
+php artisan make:model Fight -mcfs

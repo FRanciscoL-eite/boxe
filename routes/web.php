@@ -65,14 +65,11 @@ Route::post('/categories/store', function (Request $request) {
     $validated = $request->validate([
         'name' => 'required|min:3|unique:categories',        
         'slug' => 'required|unique:categories,slug',        
-        'description' => 'min:3'
     ]);
 
     Category::create([
         'name' => $request->input('name'),
         'slug' => $request->input('slug'),
-        'description' => $request->input('description'),
-        'image' => $request->input('image'),
     ]);
     
     return redirect()->route('categories.create');

@@ -16,6 +16,7 @@ class FighterSeeder extends Seeder
        DB::table('fighters')->delete();
 
         DB::table('fighters')->insert([
+            'id' => 1,
             'name' => 'Terence Crawford',
             'weight' => 66.7,
             'birthday' => '1987/09/29',
