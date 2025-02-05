@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('liga');
             $table->foreignId('fighter1')->references('id')->on('fighters')->constrained()->cascadeOnDelete();
             $table->foreignId('fighter2')->references('id')->on('fighters')->constrained()->cascadeOnDelete();
+            $table->foreignId('winner_id')->nullable()->references('id')->on('fighters')->cascadeOnDelete();
             $table->foreignIdFor(Category::class)->constrained()->cascadeOnDelete();
         });
     }
