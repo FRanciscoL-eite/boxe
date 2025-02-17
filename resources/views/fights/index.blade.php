@@ -6,14 +6,19 @@
             <table>
                 <thead class="font-bold">
                     <td>Nome</td>
-                    <td>weight</td>                    
+                    <td>Data</td>
+                    <td>Local</td>
+                    <td>liga</td>
+                    <td>categoria</td>                    
                 </thead>
                 @foreach ($fights as $fight)
                     <tr class="bg-gray-50 rounded p-4">
-                        <td >{{ $fight->data }}</td>
-                        <td>{{ $fight->local }}</td>                        
                         <td>{{ $fight->fighter1 }}</td>                        
-                        <td>{{ $fight->fighter2 }}</td>                        
+                        <td>{{ $fight->fighter2 }}</td>
+                        <td >{{ $fight->data }}</td>
+                        <td>{{ $fight->local }}</td>
+                        <td>{{ $fight->liga }}</td>    
+                        <td>{{ $fight->category_id }}</td>                        
                     </tr>
                 @endforeach
             </table>
