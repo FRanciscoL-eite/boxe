@@ -103,14 +103,14 @@ class FighterSeeder extends Seeder
 
         DB::table('fighters')->insert([
             'name' => 'Jaron Ennis',
-            'weight' => 66,7,
+            'weight' => 66.7,
             'birthday' => '1997/06/17',
             'country' => 'EUA'
         ]);
 
         DB::table('fighters')->insert([
             'name' => 'Marlon Tapales',
-            'weight' => 55,3,
+            'weight' => 55.3,
             'birthday' => '1992/03/23',
             'country' => 'Filipinas'
         ]);
@@ -131,7 +131,7 @@ class FighterSeeder extends Seeder
 
         DB::table('fighters')->insert([
             'name' => 'Ryan Garcia',
-            'weight' => 61,2,
+            'weight' => 61.2,
             'birthday' => '1988/08/08',
             'country' => 'EUA'
         ]);
@@ -145,21 +145,21 @@ class FighterSeeder extends Seeder
 
         DB::table('fighters')->insert([
             'name' => 'Tommy Fury',
-            'weight' => 83,9,
+            'weight' => 83.9,
             'birthday' => '1999/05/07',
             'country' => 'Reino Unido'
         ]);
 
         DB::table('fighters')->insert([
             'name' => 'Vasiliy Lomachenko',
-            'weight' => 61,2,
+            'weight' => 61.2,
             'birthday' => '1988/02/17',
             'country' => 'Ucrânia'
         ]);
 
         DB::table('fighters')->insert([
             'name' => 'Isaac Cruz',
-            'weight' => 61,2,
+            'weight' => 61.2,
             'birthday' => '1998/05/23',
             'country' => 'México'
         ]);

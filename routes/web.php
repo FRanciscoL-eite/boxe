@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Category;
+use App\Models\Fight;
 use App\Models\Fighter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -13,6 +14,11 @@ Route::get('/lutadores', function () {
     $fighters = Fighter::all();
     return view('lutadores.index', compact('fighters'));
 })->name('lutadores.index');
+
+Route::get('/lutas', function () {
+    $fights = Fight::all();
+    return view('fights.index', compact('fights'));
+})->name('fights.index');
 
 Route::get('/lutadores/create', function () {
     return view('lutadores.create');
