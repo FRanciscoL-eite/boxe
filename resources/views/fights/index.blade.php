@@ -5,11 +5,12 @@
         <div class="grid grid-cols-1 gap-7">
             <table>
                 <thead class="font-bold">
-                    <td>Nome</td>
+                    <td>Lutador1</td>
+                    <td>Lutador2</td>
                     <td>Data</td>
                     <td>Local</td>
-                    <td>liga</td>
-                    <td>categoria</td>                    
+                    <td>Liga</td>
+                    <td>Categoria</td>                    
                 </thead>
                 @foreach ($fights as $fight)
                     <tr class="bg-gray-50 rounded p-4">
