@@ -15,6 +15,11 @@ Route::get('/lutadores', function () {
     return view('lutadores.index', compact('fighters'));
 })->name('lutadores.index');
 
+Route::get('/lutadores/{id}', function ($id) {
+    $fighter = Fighter::find( $id );
+    return view('lutadores.show', compact('fighter'));
+})->name('lutadores.show');
+
 Route::get('/lutas', function () {
     $fights = Fight::all();
     return view('fights.index', compact('fights'));

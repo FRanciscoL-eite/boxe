@@ -12,7 +12,7 @@
                 </thead>
                 @foreach ($fighters as $fighter)
                     <tr class="bg-gray-50 rounded p-4">
-                        <td >{{ $fighter->name }}</td>
+                        <td ><a href="/lutadores/{{ $fighter->id }}">{{ $fighter->name }}</a></td>
                         <td>{{ $fighter->weight }}</td>
                         <td>{{ $fighter->birthday }}</td>
                         <td>{{ $fighter->country }}</td>
