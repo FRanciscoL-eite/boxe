@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->date('birthday');
             $table->float('weight');            
-            $table->text('country');
+            $table->string  ('country');
+            $table->string('image')->nullable();
             //$table->float('statistics');
         });
     }

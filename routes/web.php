@@ -15,6 +15,10 @@ Route::get('/lutadores', function () {
     return view('lutadores.index', compact('fighters'));
 })->name('lutadores.index');
 
+Route::get('/lutadores/create', function () {
+    return view('lutadores.create');
+})->name('lutadores.create');
+
 Route::get('/lutadores/{id}', function ($id) {
     $fighter = Fighter::find( $id );
     return view('lutadores.show', compact('fighter'));
@@ -25,9 +29,7 @@ Route::get('/lutas', function () {
     return view('fights.index', compact('fights'));
 })->name('fights.index');
 
-Route::get('/lutadores/create', function () {
-    return view('lutadores.create');
-})->name('lutadores.create');
+
 
 Route::post('/lutadores/store', function (Request $request) {
 
@@ -36,14 +38,14 @@ Route::post('/lutadores/store', function (Request $request) {
         'birthday' => 'date',        
         'weight' => 'numeric',
         'statistic' => 'float',        
-        'country' => 'text'
+        'country' => 'string'
     ]);
 
     Fighter::create([
         'name' => $request->input('name'),
         'birthday' => $request->input('birthday'),
         'weight' => $request->input('weight'),
-        'statistic' => $request->input('statistc'),
+        //'statistic' => $request->input('statistc'),
         'country' => $request->input('country'),
     ]);
     

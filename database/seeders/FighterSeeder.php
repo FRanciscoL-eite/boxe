@@ -20,7 +20,8 @@ class FighterSeeder extends Seeder
             'name' => 'Terence Crawford',
             'weight' => 66.7,
             'birthday' => '1987/09/29',
-            'country' => 'EUA'
+            'country' => 'EUA',
+            'image'=> 'Terence.png'
         ]);
 
         DB::table('fighters')->insert([

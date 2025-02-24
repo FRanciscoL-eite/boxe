@@ -15,10 +15,12 @@
             <div class="text-sm text-red-500">{{ $message }}</div>
         @enderror
         <br>
+        {{-- 
         Statistic <input type="number" name="statistic" value="{{ old('statistic') }}"><br>
         @error('statistic')
             <div class="text-sm text-red-500">{{ $message }}</div>
         @enderror
+        --}}
         Country: <input type="text" name="country" value="{{ old('country') }}">
         @error('country')
             <div class="text-sm text-red-500">{{ $message }}</div>
