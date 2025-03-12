@@ -6,6 +6,7 @@ use App\Models\Fighter;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,7 +21,7 @@ Route::get('/lutadores/create', function () {
 })->name('lutadores.create');
 
 Route::get('/lutadores/{id}', function ($id) {
-    $fighter = Fighter::find( $id );
+    $fighter = Fighter::find( $id )->with('fighter1');
     return view('lutadores.show', compact('fighter'));
 })->name('lutadores.show');
 
@@ -51,6 +52,7 @@ Route::post('/lutadores/store', function (Request $request) {
     
     return redirect()->route('lutadores.create');
 });
+
 
 
 Route::get('/categories', function () {
