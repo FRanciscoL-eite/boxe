@@ -21,7 +21,8 @@ class FighterSeeder extends Seeder
             'weight' => 66.7,
             'birthday' => '1987/09/29',
             'country' => 'EUA',
-            'image'=> 'Terence.png'
+            'image'=> 'Terence.png',
+            'statistics'=>'41-0-0'
         ]);
 
         DB::table('fighters')->insert([
@@ -29,7 +30,8 @@ class FighterSeeder extends Seeder
             'weight' => 55.3,
             'birthday' => '1993/04/10',
             'country' => 'Japao',
-            'image'=>'NOAYA.png'
+            'image'=>'NOAYA.png',
+            'statistics'=>'29-0-0'
         ]);
 
          DB::table('fighters')->insert([
@@ -37,7 +39,8 @@ class FighterSeeder extends Seeder
             'weight' => 100.3,
             'birthday' => '1987/01/17',
             'country' => 'Ucrania',
-            'image'=>'ody.png'
+            'image'=>'ody.png',
+            'statistics'=>'23-0-0'
 
          ]);
 
@@ -46,7 +49,8 @@ class FighterSeeder extends Seeder
              'weight' => 76.2,
              'birthday' => '1990/07/18',
              'country' => 'Mexico',
-             'image'=>'Saul.png'
+             'image'=>'Saul.png',
+            'statistics'=>'62-2-2'
          ]);
 
          DB::table('fighters')->insert([
@@ -54,7 +58,8 @@ class FighterSeeder extends Seeder
             'weight' => 79.4,
             'birthday' => '1985/01/21',
             'country' => 'Rusia',
-            'image'=>'Arutr.png'
+            'image'=>'Arutr.png',
+            'statistics'=>'21-1-0'
          ]);
 
          DB::table('fighters')->insert([
@@ -62,7 +67,8 @@ class FighterSeeder extends Seeder
             'weight' => 79.4,
             'birthday' => '1990/12/18',
             'country' => 'Quirguistao',
-            'image'=>'desco.png'
+            'image'=>'desco.png',
+            'statistics'=>'24-1-0'
          ]);
 
          DB::table('fighters')->insert([
@@ -70,7 +76,8 @@ class FighterSeeder extends Seeder
             'weight' => 61.2,
             'birthday' => '1998/11/17',
             'country' => 'EUA',
-            'image'=>'devin.png'
+            'image'=>'devin.png',
+            'statistics'=>'31-0-0'
          ]);
 
          DB::table('fighters')->insert([
@@ -78,7 +85,8 @@ class FighterSeeder extends Seeder
              'weight' => 61.2,
              'birthday' => '1994/11/07',
              'country' => 'EUA',
-             'image'=>'craque.png'
+             'image'=>'craque.png',
+            'statistics'=>'30-0-1'
          ]);
 
          DB::table('fighters')->insert([
@@ -86,7 +94,8 @@ class FighterSeeder extends Seeder
              'weight' => 59,
              'birthday' => '1997/07/28',
              'country' => 'EUA',
-             'image'=> 'carademau.png'
+             'image'=> 'carademau.png',
+            'statistics'=>'23-0-0'
             
             
          ]);
@@ -96,7 +105,8 @@ class FighterSeeder extends Seeder
              'weight' => 52.2,
              'birthday' => '2000/01/20',
              'country' => 'EUA',
-             'image'=> 'bandido.png'
+             'image'=> 'bandido.png',
+            'statistics'=>'21-0-0'
          ]);
 
          DB::table('fighters')->insert([
@@ -104,7 +114,8 @@ class FighterSeeder extends Seeder
              'weight' => 120,
              'birthday' => '1988/08/12',
              'country' => 'Reino Unido',
-             'image'=> 'uii.png'
+             'image'=> 'uii.png',
+            'statistics'=>'34-2-1'
         ]);
         
         DB::table('fighters')->insert([
@@ -112,7 +123,8 @@ class FighterSeeder extends Seeder
             'weight' => 76,
             'birthday' => '1996/12/17',
             'country' => 'Reino Unido',
-             'image'=> 'aa.png'
+             'image'=> 'aa.png',
+            'statistics'=>'30-0-0'
         ]);
 
         DB::table('fighters')->insert([
@@ -120,7 +132,8 @@ class FighterSeeder extends Seeder
             'weight' => 66.7,
             'birthday' => '1997/06/17',
             'country' => 'EUA',
-             'image'=> 'aaa.png'
+             'image'=> 'aaa.png',
+            'statistics'=>'33-0-0'
         ]);
 
         DB::table('fighters')->insert([
@@ -128,7 +141,8 @@ class FighterSeeder extends Seeder
             'weight' => 55.3,
             'birthday' => '1992/03/23',
             'country' => 'Filipinas',
-             'image'=> 'a.png'
+             'image'=> 'a.png',
+            'statistics'=>'39-4-0'
         ]);
 
         DB::table('fighters')->insert([
@@ -136,7 +150,8 @@ class FighterSeeder extends Seeder
             'weight' => 96,
             'birthday' => '1985/10/22',
             'country' => 'EUA',
-             'image'=> 'd.png'
+             'image'=> 'd.png',
+            'statistics'=>'43-4-1'
         ]);
 
         DB::table('fighters')->insert([
@@ -144,7 +159,8 @@ class FighterSeeder extends Seeder
             'weight' => 113,
             'birthday' => '1989/10/15',
             'country' => 'Reino Unido',
-             'image'=> 'feio.png'
+             'image'=> 'feio.png',
+            'statistics'=>'28-4-0'
         ]);
 
         DB::table('fighters')->insert([
@@ -152,7 +168,8 @@ class FighterSeeder extends Seeder
             'weight' => 61.2,
             'birthday' => '1998/08/08',
             'country' => 'EUA',
-             'image'=> 'rai.png'
+             'image'=> 'rai.png',
+            'statistics'=>'24-1-0'
         ]);
 
         DB::table('fighters')->insert([
@@ -160,7 +177,8 @@ class FighterSeeder extends Seeder
             'weight' => 86,
             'birthday' => '1997/01/17',
             'country' => 'EUA',
-            'image'=> 'merda.png'
+            'image'=> 'merda.png',
+            'statistics'=>'11-1-0'
         ]);
 
         DB::table('fighters')->insert([
@@ -168,7 +186,8 @@ class FighterSeeder extends Seeder
             'weight' => 83.9,
             'birthday' => '1999/05/07',
             'country' => 'Reino Unido',
-            'image'=> 'hh.png'
+            'image'=> 'hh.png',
+            'statistics'=>'10-0-0'
         ]);
 
         DB::table('fighters')->insert([
@@ -176,7 +195,8 @@ class FighterSeeder extends Seeder
             'weight' => 61.2,
             'birthday' => '1988/02/17',
             'country' => 'Ucrânia',
-            'image'=> 'h.png'
+            'image'=> 'h.png',
+            'statistics'=>'18-3-0'
         ]);
 
         DB::table('fighters')->insert([
@@ -184,7 +204,8 @@ class FighterSeeder extends Seeder
             'weight' => 61.2,
             'birthday' => '1998/05/23',
             'country' => 'México',
-            'image'=>'fim.png'
+            'image'=>'fim.png',
+            'statistics'=>'27-3-1'
 
         ]);
 

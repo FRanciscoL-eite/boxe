@@ -12,4 +12,7 @@ class Fighter extends Model
 
     protected $guarded = [];
 
+    public function fighter1() {
+        
+    }
 }

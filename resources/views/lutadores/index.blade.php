@@ -2,12 +2,12 @@
     <div class="max-w-4xl mx-auto py-8 text-center">
         <h1 class="text-2xl font-bold mb-4">Lutadores</h1>
     
-        <form action="/lutadores/pesquisar" method="GET" class="flex justify-center items-center gap-2 mb-6">
-            <input type="text" name="query" class="border border-gray-400 w-1/3 p-2 rounded text-lg" placeholder="Pesquisar" />
+        <div class="flex justify-center items-center gap-2 mb-6">
+            <input type="text" class="border border-gray-400 w-1/3 p-2 rounded text-lg" placeholder="Pesquisar" />
             <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded font-semibold hover:bg-blue-600">
                 Procurar
             </button>
-        </form>
+        </div>
     
         <div class="overflow-x-auto">
             <table class="w-full border-collapse border border-gray-300">
@@ -16,6 +16,7 @@
                         <th class="p-2 border">Nome</th>
                         <th class="p-2 border">Peso</th>
                         <th class="p-2 border">Nascimento</th>
+                        <th class="p-2 border">Estatistica</th>
                         <th class="p-2 border">País</th>
                     </tr>
                 </thead>
@@ -27,6 +28,7 @@
                             </td>
                             <td class="p-2 border">{{ $fighter->weight }}</td>
                             <td class="p-2 border">{{ $fighter->birthday }}</td>
+                            <td class="p-2 border">{{ $fighter->statistics }}</td>
                             <td class="p-2 border">{{ $fighter->country }}</td>
                         </tr>
                     @endforeach

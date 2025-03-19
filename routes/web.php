@@ -20,8 +20,8 @@ Route::get('/lutadores/create', function () {
     return view('lutadores.create');
 })->name('lutadores.create');
 
-Route::get('/lutadores/{id}', function ($id) {
-    $fighter = Fighter::find( $id )->with('fighter1');
+Route::get('/lutadores/{id}', function ($id) {    
+    $fighter = Fighter::where('id', $id)->first();    
     return view('lutadores.show', compact('fighter'));
 })->name('lutadores.show');
 
@@ -52,7 +52,6 @@ Route::post('/lutadores/store', function (Request $request) {
     
     return redirect()->route('lutadores.create');
 });
-
 
 
 Route::get('/categories', function () {

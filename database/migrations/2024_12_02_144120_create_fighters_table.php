@@ -18,7 +18,7 @@ return new class extends Migration
             $table->float('weight');            
             $table->string  ('country');
             $table->string('image')->nullable();
-            //$table->float('statistics');
+            $table->string('statistics');
         });
     }
 

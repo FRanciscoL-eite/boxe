@@ -30,6 +30,14 @@
             </div>
 
             <div class="mb-4">
+                <label for="statistics" class="block text-sm font-medium text-gray-700">Estatistica:</label>
+                <input type="text" name="statistics" id="statistics" value="{{ old('statistics') }}" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200" required>
+                @error('statistics')
+                    <div class="text-sm text-red-500 mt-1">{{ $message }}</div>
+                @enderror
+            </div>
+
+            <div class="mb-4">
                 <label for="country" class="block text-sm font-medium text-gray-700">País:</label>
                 <input type="text" name="country" id="country" value="{{ old('country') }}" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-200" required>
                 @error('country')

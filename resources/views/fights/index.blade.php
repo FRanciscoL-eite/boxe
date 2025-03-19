@@ -22,7 +22,7 @@
                             <td class="py-2 px-4 border-b">{{ $fight->data }}</td>
                             <td class="py-2 px-4 border-b">{{ $fight->local }}</td>
                             <td class="py-2 px-4 border-b">{{ $fight->liga }}</td>
-                            <td class="py-2 px-4 border-b">{{ \App\Models\Category::find(id: $fight->category_id)->categories }}</td>
+                            <td class="py-2 px-4 border-b">{{ \App\Models\Category::find(id: $fight->category_id)->name  }}</td>
                         </tr>
                     @endforeach
                 </tbody>
