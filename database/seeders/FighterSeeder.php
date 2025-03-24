@@ -209,6 +209,68 @@ class FighterSeeder extends Seeder
 
         ]);
 
+        DB::table('fighters')->insert([
+            'name' => 'Muhammad Ali',
+            'weight' => 107,
+            'birthday' => '1942/1/17',
+            'country' => 'USA',
+            'image'=>'ali.png',
+            'statistics'=>'56-5-0'
+
+        ]);
+
+        DB::table('fighters')->insert([
+            'name' => 'Sugar Ray Robinson',
+            'weight' => 70,
+            'birthday' => '1921/5/03',
+            'country' => 'USA',
+            'image'=>'100.png',
+            'statistics'=>'173-19-6'
+
+        ]);
+
+        DB::table('fighters')->insert([
+            'name' => 'Floyd Mayweather Jr',
+            'weight' => 67,
+            'birthday' => '1977/2/24',
+            'country' => 'USA',
+            'image'=>'50.png',
+            'statistics'=>'50-0-0'
+
+        ]);
+
+        DB::table('fighters')->insert([
+            'name' => 'Mike Tyson',
+            'weight' => 100,
+            'birthday' => '1966/6/30',
+            'country' => 'USA',
+            'image'=>'MIkezao.png',
+            'statistics'=>'50-7-0'
+
+        ]);
+
+        DB::table('fighters')->insert([
+            'name' => 'George Foreman',
+            'weight' => 110,
+            'birthday' => '1949/1/10',
+            'country' => 'USA',
+            'image'=>'chines.png',
+            'statistics'=>'76-5-0'
+
+        ]);
+
+        DB::table('fighters')->insert([
+            'name' => 'Eder Jofre',
+            'weight' => 55,
+            'birthday' => '1936/3/26',
+            'country' => 'Brasil',
+            'image'=>'brasill.png',
+            'statistics'=>'75-2-4'
+
+        ]);
+
+
+
 
 
     }
